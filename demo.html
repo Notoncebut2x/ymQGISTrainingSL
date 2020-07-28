@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/youthMappers.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+			
+				<section>
+						<h1>QGIS: A Crash Course</h1>
+						<h3 style="text-align:left;background-color: #B3D3E8; color:white;padding:10px"">Are you sure you want to get on this ride when the driver is going to jump off in a week?</h3>
+				</section>
+
+				<section>
+					<h2>Why Maps?</h2>
+				</section>
+
+				<section>
+					<h3>They look cool!</h3	>
+					<img src="img/amsterdamBuildingsAge.jpg" style="height:90%; width:90%;">
+				</section>
+
+				<section>
+					<h3>They are informative</h3>
+					<img src="img/eu_according_to_the_usa.png" style="height:80%; width:80%;">
+				</section>
+
+				<section>
+					<h3>They are useful tools</h3	>
+					<img src="img/map_on_phone.jpeg" style="height:80%; width:80%;">
+				</section>
+
+				<section>
+					<h3>But hasn't the entire world been explored and mapped?</h3>
+				</section>
+
+				<section>
+					<h3>No!!! Our planet is dynamic and ever changing.</h3> 
+				</section>
+
+				<section>
+					<h3>Humans and natural forces continue to shape & change the earth, and better technology let us map it more accurately.</h3>	
+					<img src="img/shrinking_ice_caps.jpeg" style="height:80%; width: 80%;">
+				</section>
+
+
+				<section>
+					<h2>Geography Basics</h2>
+				</section>
+				
+				<section>
+					<h3>Maps are representations of the real world.  This includes things that can be seen as well as representations of things that cannot.</h3>
+				</section>
+
+				<section>
+					<h3>The world is shaped as a(n): _______.</h3>
+				</section>
+
+				<section>
+					<h3>The world is shaped as a(n): <u>ellipsoid.</u></h3>
+				</section>
+
+				<section>
+					<h3>Hard to put a 3D object (like an ellipsoid) on a 2D plane.</h3>
+				</section>
+
+				<section>
+					<h3>You have to rip, strech, or perform another distortions</h3>
+					<img src="img/orange_maps.png">
+				</section>
+
+				<section>
+					<h3>Everything is related to everything else but near things are more related than distant things.
+						<i>-Waldo Tobler</i>
+					</h3>
+				</section>
+
+				<section>
+					<h2>GIS Basics</h2>
+				</section>
+
+				<section>
+					<h3>Geographic phenomena on our map can be <i>discrete</i> or <i>continuous</i>.</h3>
+				</section>
+
+				<section>
+					<h3>Continuous types changes gradually, not abruptly ex: temperature, elevation, salinity.</h3>
+				</section>
+
+				<section>
+					<h3>Continuous types changes gradually, not abruptly ex: temperature, elevation, salinity.</h3>
+					<img src="img/continuous_data.gif" style="height:60%; width: 60%;">
+				</section>
+
+				<section>
+					<h3>Discrete types are divided into mutually exclusive parts, with all locations in one part having the same value.</h3>
+					<img src="img/discrete_data.gif" style="height:55%; width: 55%;">
+				</section>
+
+				<section>
+					<h3>Different types of data can be used to represent our geographic phenomenon.</h3>
+				</section>
+
+				<section>
+					<h3>But you have to make sure that the right data is used to represent the right type of phenomenon!!!</h3>
+				</section>
+
+				<section>
+					<h3>
+						<ul>
+							<li><b>Nominal Data</b> provides an identifier to discriminate between values.</li>
+							<li><b>Ordinal Data</b> can be put in some natural sequence.</li>
+							<li><b>Interval Data</b> allows for simple forms of computation like + and -.</li>
+							<li><b>Ratio Data</b> allows for most, if not all, arithmetic computations.</li>
+						</ul>
+					</h3>
+				</section>
+			
+				<section>
+					<h2>GIS File Types</h2>
+				</section>
+
+				<section>
+					<h3>Map data is stored as a <i>Vector</i> or a <i>Raster.</i></h3>
+				</section>
+
+				<section>
+					<h3>A raster is a set of regularly spaced cells with associated values.</h3>
+				</section>
+
+				<section>
+					<h3>The value of the cell is assumed to be valid for all the area within it.</h3>
+				</section>
+
+				<section>
+					<img src="img/raster_example.jpeg">
+				</section>
+
+				<section>
+					<img src="img/oregan_raster.png">
+				</section>
+
+				<section>
+					<h3>Vectors, unlike rasters, attempt to explicitly georeference the geographic phenomena.</h3>
+				</section>
+
+				<section>
+					<h3>They can be a single point (x, y)or(x, y, z).</h3>
+					<img src="img/point_data.jpeg" style="height:65%; width: 65%;">
+				</section>
+
+				<section>
+					<h3>They can be a line. Which requires two or more nodes and a line drawn between them.</h3>
+					<img src="img/line-vector.png">
+				</section>
+
+				<section>
+					<h3>Another type of vectors are polygons. They are a collection of nodes and arcs.</h3>
+					<img src="img/polytong_vector.png">
+				</section>
+
+				<section>
+					<h3>Each section of vector data can have thematic data associated with it.</h3>
+				</section>
+
+				<section>
+					<h3>Now we have some basic GIS principles down...lets get mapping!!!</h3>
+				</section>
+
+
+
+				<section>
+					<h3> GIS can mean a lot of different things...</h3>
+					<p>
+						<ul>
+							<li>Geographic Information Systems</li>
+							<li>Geographic Information Software</li>
+							<li>Geographic Information Science</li>
+						</ul>
+					</p>
+				</section>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
