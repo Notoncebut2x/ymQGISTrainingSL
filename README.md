@@ -1,1 +1,1 @@
-# QGIS Training Presentation for YouthMappers Gambia and the KMC
+# QGIS Training Presentation for YouthMappers Sierra Leone
