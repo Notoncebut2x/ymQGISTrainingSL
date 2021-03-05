@@ -37,7 +37,7 @@
                 <section>
 	            <h1>Introduction to GIS and QGIS</h1>
 		    <h2>YouthMappers</h2>
-		    <h3>August 4th - 6th</h3>
+		    <h3>March 5th</h3>
 
                     <aside class="notes">
                     Good morning and Nangen deff I am so glad you were able to join myself and my co-presenter today!  To start my name is Rory Nealon and I am the activity manager for the YouthMappers program at the US Agency for International Development or USAID, the Federal office in charge of coordinating the United State's assistance to the rest of world.  At USAID I work at the GeoCenter which applies a geographic approach to internatinoal development.  The office helps USAID Missions around the world and Bureaus in DC use geospatial technology for data analysis and visualizations.
@@ -57,20 +57,27 @@
 
 		<section>
 			<h2>Schedule</h2>
+			<h4>
 			<ul>
-			    <li>Day 1: Intro Geography + Data and Intro to QGIS</li>
-			    <li>Day 2: Using OpenStreetMap data in QGIS and Cartography</li>
-			    <li>Day 3: Final Project!</li>
+			    <li>Geography + GIS Basics </li>
+			    <li>Exporting OSM Data</li>
+			    <li>QGIS Bascis</li>
+			    <li>Cartography Basics</li>
+			    <li>Final Project</li>
 			</ul>
+			</h4>
 		</section>
 
 		<section>
 		<h2>Expectations</h2>
-		<ul>
-		    <li>Listen!...if you aren't listening then why are you hear?</li>
-		    <li>Participate...you will learn more that way</li>
-		    <li>Ask questions when you are stuck</li>
-		    <li>Be nice!  We have a lot of different background and skills at this training</li>
+		<h4>
+		    <ul>
+		        <li>Listen!...if you aren't listening then why are you here?</li>
+		        <li>Participate...you will learn more that way</li>
+		        <li>Ask questions when you are stuck</li>
+		        <li>Be nice!  We have a lot of different background and skills at this training</li>
+		    </ul>
+		</h4>
 		</section>
 
 		<section>
@@ -212,14 +219,14 @@
                 </section>
 
 		<section>
-                  <h3><b>Geocoding</b> is when you take text data like "The Gambia" and associate points with it.  This is what google maps or OpenStreetMaps does when you search for a location</h3>
+                  <h3><b>Geocoding</b> is when you take text data like "Sierra Leone" and associate points with it.  This is what google maps or OpenStreetMaps does when you search for a location</h3>
 		<aside class="notes">
-	        Geocoding is when you take text and get lat/longs...like if you were to seach for the Gambia in google maps it would return the coordinates of the country.
+	        Geocoding is when you take text and get lat/longs...like if you were to seach for Sierra Leone in google maps it would return the coordinates of the country.
 		</aside>
 		</section>
 
                 <section>
-                    <h3><b>Reverse Geocoding</b> Is when you take a longitude and a latitude and return a text value like "The Gambia"</h3>
+                    <h3><b>Reverse Geocoding</b> Is when you take a longitude and a latitude and return a text value like "Sierra Leone"</h3>
                     <aside class="notes">
 	            Reverse geocoding is the opposite.  Its when you give coordinates and the reverse geocoder gives you the name of what is there.
 		    </aside>
@@ -258,7 +265,7 @@
 
 		<section>
 		    <h3>Discrete types are divided into mutually exclusive parts, with all locations in one part having the same value.</h3>
-		    <img src="img/discrete_data.gif" style="height:55%; width: 55%;">
+		    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sierra_Leone%2C_administrative_divisions_-_de_-_colored_2018.svg/1024px-Sierra_Leone%2C_administrative_divisions_-_de_-_colored_2018.svg.png" style="height:30%; width: 30%;">
 		    <aside class="notes">
 		        Other types of geographic phenomena are discrete.  This means that they can be divided into distinct parts with everything in the value having the exact same value.  For example country boundaries are discrete as are a building's footprint, or a road.
                     </aside>
@@ -369,17 +376,78 @@ Finally, ration data which allows for most, if not all, arthmetic computations. 
 		<section>
 		    <h3>Now we have some basic GIS principles down...lets get mapping!!!  Over to you Christine!</h3>
 		</section>
+		
+		<section>
+		    <h2>Exporting Data from OSM</h2>
+		</section>
+		<section>
+		    <h3>Over the years there has been a lot of different tools and websites developed for extracting data from OSM.  Today I will show you three of my favorite. </h3>
+		</section>
+		<section>
+		<h4>
+		    <ul>
+		        <li><a href="https://export.hotosm.org/en/v3/">HOT OSM Export Tool</a></li>
+		        <li><a href="https://overpass-turbo.eu/">Overpass Turbo</a></li>
+		        <li><a href="https://www.geofabrik">Geofabrik</a></li>
+		    </ul>
+		</h4>
+		</section>
+		<section>
+		    <h2>HOT Export Tool</h2>
+		    <h4>
+		        <ul>
+		        <li>Pros</li>
+		            <ul>
+		                <li>Easy to use</li>
+		                <li>Exports data in a variety of formats</li>
+		                <li>OSM data is catorigized into easy to understand categories</li>
+		            </ul>
+		        <li>Cons</li>
+		            <ul>
+		                <li>Can be slow when the OSM servers are busy or a lot of exports have been requested</li>
+		            </ul>
+		        </ul>
+		    </h4>
+		</section>
+		<section>
+		    <h2>Overpass Turbo</h2>
+		    <h4>
+		        <ul>
+		        <li>Pros</li>
+		            <ul>
+		                <li>Requires knowledge of OSM data structure</li>
+		                <li>You an view it before you download it!</li>
+		                <li>Can be incorporated into programming scripts</li>
+		                <li>Works very quickly for small datasets</li>
+		                <li>Has a wizard to assist with Queries</li>
+		                
+		            </ul>
+		        <li>Cons</li>
+		            <ul>
+		                <li>Requires learning a progamming language</li>
+		                <li>Requires knowledge of OSM data structure</li>
+		            </ul>
+		        </ul>
+		    </h4>
+		</section>
+		<section>
+		    <h2>GeoFabrik</h2>
+		    <h4>
+		        <ul>
+		        <li>Pros</li>
+		            <ul>
+		                <li>Provides standard ready to use GIS Files (.shps!)/li>
+		            </ul>
+		        <li>Cons</li>
+		            <ul>
+		                <li>"Fremium" model meaning data may be incomplete</li>
+		                <li>The data can be a little outdated</li>
+		            </ul>
+		        </ul>
+		    </h4>
+		</section>	
 
-		<!-- <section>
-		    <h3> GIS can mean a lot of different things...</h3>
-		        <p>
-			    <ul>
-			        <li>Geographic Information Systems</li>
-				<li>Geographic Information Software</li>
-				<li>Geographic Information Science</li>
-				</ul>
-		        </p>
-		</section> -->
+	
 
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
